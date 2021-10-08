@@ -1,16 +1,16 @@
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
-// 定义Percolation类
+// Define a Percolation Class
 public class Percolation {
-	private boolean[][] grid;				// 记录网格
+	private boolean[][] grid;				// Record the grid
 	private WeightedQuickUnionUF wqfGrid;
 	private WeightedQuickUnionUF wqfFull;
 	private int gridSize;
 	private int gridSquared;
-	private int virtualTop;					// 虚格点
-	private int virtualBottom;				// 虚格点
-	private int openSites;					// 记录已打开的格点数
+	private int virtualTop;				
+	private int virtualBottom;				
+	private int openSites;					
 
 	// creates n-by-n grid, with all sites initially blocked
 	public Percolation(int n) {
